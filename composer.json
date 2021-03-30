@@ -1,0 +1,37 @@
+{
+	"name": "vaibhavk3381/hello-world",
+	"description": "This will help you understand how to create package with composer",
+	"license": "GPL-3.0-or-later",
+	"keywords": ["Sample Coposer", "Composer Tutorial", "First Composer", "introduction To Composer", "Test Composer"],
+	"type": "library",
+	"authors": [{
+		"name": "vaibhav",
+		"email": "vaibhavk3381@gmail.com"
+	}],
+	"require": {
+		"php": ">5.6"
+	},
+
+	"autoload": {
+		"files": [
+			"common/helpers/helpers.php"
+		],
+		"classmap": [
+			"common/libraries/validation.php"
+		],
+		"psr-4": {
+			"Database\\": "db/"
+		},
+		"psr-0": {
+			"PSR0\\": "psr0/"
+		}
+	},
+	"extra": {
+		"installer-name": "Composer Tutorial"
+	},
+	"config": {
+		"process-timeout": 600,
+		"sort-packages": true
+	},
+	"prefer-stable": true
+}
